@@ -8,8 +8,9 @@ ansiColor('xterm') {
             checkout scm
         }
         stage('Setup') {
-            dir "04_tests/"
-            // sh "ansible-galaxy install -r requirements.yml"
+            dir('04_tests/') {
+                sh "ansible-galaxy install -r requirements.yml"
+            }
         }
         // stage('Validate') {
         //     // dir "04_tests"
