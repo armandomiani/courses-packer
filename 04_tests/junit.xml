@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="utf-8"?><testsuite errors="0" failures="0" name="pytest" skipped="0" tests="1" time="0.140"><testcase classname="test_infra" file="test_infra.py" line="0" name="test_jenkins_is_installed[local]" time="0.104"></testcase></testsuite>

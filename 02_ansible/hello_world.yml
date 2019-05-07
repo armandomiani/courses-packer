@@ -1,0 +1,8 @@
+---
+- name: Echo
+  hosts: all
+
+  tasks:
+  - name: Pring debug message
+    debug:
+      msg: "Hello World from Ansible"
