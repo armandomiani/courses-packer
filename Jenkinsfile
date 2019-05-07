@@ -18,7 +18,7 @@ ansiColor('xterm') {
             }
         }
         stage('Build') {
-            withCredentials([usernamePassword(credentialsId: 'aws_access_keys', usernameVariable: 'AWS_ACCESS_KEY', passwordVariable: 'AWS_SECRET_KEY')]) {
+            withCredentials([usernamePassword(credentialsId: '685d64a9-34bb-4f23-ac5d-0bdf62c9cf8e', usernameVariable: 'AWS_ACCESS_KEY', passwordVariable: 'AWS_SECRET_KEY')]) {
                 dir('04_tests/') {
                     sh "packer build -var 'aws_region=us-east-2' 11_tests.json"
                 }
