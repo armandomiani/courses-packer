@@ -27,6 +27,7 @@ ansiColor('xterm') {
         stage('Store Artifacts') {
             dir('05_jenkins/') {
                 archiveArtifacts 'manifest.json'
+                archiveArtifacts 'junit.xml'
             }
         }
     }
