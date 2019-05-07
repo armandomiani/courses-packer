@@ -7,10 +7,11 @@ ansiColor('xterm') {
             checkout scm
         }
         stage('Setup') {
-            sh "cd 04_tests"
+            dir "04_tests"
             sh "ansible-galaxy install -r requirements.yml"
         }
         stage('Validate') {
+            // dir "04_tests"
             sh "packer validate 11_tests.json"
         }
         stage('Build') {
